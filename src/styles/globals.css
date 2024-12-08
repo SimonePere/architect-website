@@ -1,21 +1,146 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1c1c1c; /* Grigio ardesia per il background in dark mode */
+  --foreground: #f2f4f7; /* Testo chiaro in dark mode */
+  --primary-accent: #fcca46; /* Giallo ocra per il focus e interazioni */
+  --secondary-accent: #fe7f2d; /* Arancio per bottoni e link principali in dark mode */
+  --dark-shades: #1f2a32; /* Grigio ardesia per il fondo scuro */
+  --text-light: #f2f4f7; /* Testo chiaro su fondo scuro */
+  --font-sans: "Montserrat", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.logo {
+  font-size: x-large;
+  font-weight: 700;
 }
 
+.logo:hover {
+  color: var(--secondary-accent);
+  text-decoration: none;
+}
+/* Forzare la modalità dark, senza supporto per la modalità chiara */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
+
+h1,
+h2 {
+  font-family: var(--font-sans);
+  font-weight: 800; /* Font bold per i titoli */
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem; /* Grandezza di default per h1 */
+}
+
+h2 {
+  font-size: 2.25rem; /* Grandezza di default per h2 */
+}
+
+h3 {
+  font-size: 1.85rem; /* Grandezza di default per h3 */
+}
+
+h4 {
+  font-size: 1.5rem; /* Grandezza di default per h4 */
+}
+
+a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-accent);
+  text-underline-position: auto;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+
+/* card */
+
+.design-card {
+  position: relative;
+  padding: 1.5rem;
+  background-color: #1c1c1c; /* Sfondo principale */
+  color: #f2f4f7; /* Colore testo */
+  overflow: hidden;
+  border: 8px solid black; /* Bordo nero */
+  box-shadow: 15px 15px 0 #000; /* Ombra del bordo */
+  transition: all 0.3s ease-in-out;
+}
+
+/* transform: rotate(0) scale(1.05); Hover: reset rotazione e zoom */
+.design-card:hover {
+  box-shadow: 20px 20px 0 #000; /* Hover: ombra più marcata */
+}
+
+.design-card .badge {
+  position: absolute;
+  top: 0.75rem;
+  right: -95px;
+  width: 350px;
+  text-align: center;
+  transform: rotate(45deg);
+  background-color: black; /* Sfondo badge */
+  color: #f2f4f7; /* Testo badge */
+  padding: 0.75rem 0;
+  font-weight: bold;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease-in-out;
+}
+
+.design-card .badge:hover {
+  background-color: #fcca46; /* Hover: sfondo giallo */
+}
+
+.design-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #fcca46; /* Bordo giallo */
+  display: inline-block;
+}
+
+.design-card p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  color: #f2f4f7; /* Colore paragrafo */
+}
+
+form {
+  color: var(--background);
+  font-size: medium;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  /* Bordo nero */
+  box-shadow: 15px 15px 0 #000; /* Ombra del bordo */
+}
+
+input,
+textarea:focus-within {
+  border: none;
+}
+
+

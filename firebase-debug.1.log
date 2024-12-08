@@ -1,0 +1,51 @@
+[debug] [2024-12-08T17:02:06.816Z] ----------------------------------------------------------------------
+[debug] [2024-12-08T17:02:06.818Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\simon\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-08T17:02:06.818Z] CLI Version:   13.28.0
+[debug] [2024-12-08T17:02:06.818Z] Platform:      win32
+[debug] [2024-12-08T17:02:06.819Z] Node Version:  v20.13.1
+[debug] [2024-12-08T17:02:06.819Z] Time:          Sun Dec 08 2024 18:02:06 GMT+0100 (Ora standard dell’Europa centrale)
+[debug] [2024-12-08T17:02:06.819Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-08T17:02:06.876Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-08T17:02:06.877Z] > authorizing via signed-in user (simonemele6596@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\simon\Desktop\davide\davide-website
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-08T17:02:12.555Z] Using project from CLI flag: davide-mele
+[debug] [2024-12-08T17:02:12.557Z] Checked if tokens are valid: true, expires at: 1733680909430
+[debug] [2024-12-08T17:02:12.558Z] Checked if tokens are valid: true, expires at: 1733680909430
+[debug] [2024-12-08T17:02:12.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/davide-mele [none]
+[debug] [2024-12-08T17:02:13.371Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/davide-mele 200
+[debug] [2024-12-08T17:02:13.371Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/davide-mele {"projectId":"davide-mele","projectNumber":"179217357575","displayName":"davide-mele","name":"projects/davide-mele","resources":{"hostingSite":"davide-mele"},"state":"ACTIVE","etag":"1_4a3621fa-c65d-4fb0-83df-48f50ef7bb2d"}
+[info] i  Using project davide-mele (davide-mele) 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-08T17:02:13.383Z] Checked if tokens are valid: true, expires at: 1733680909430
+[debug] [2024-12-08T17:02:13.383Z] Checked if tokens are valid: true, expires at: 1733680909430
+[debug] [2024-12-08T17:02:13.383Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/davide-mele [none]
+[debug] [2024-12-08T17:02:13.801Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/davide-mele 200
+[debug] [2024-12-08T17:02:13.801Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/davide-mele {"projectId":"davide-mele","projectNumber":"179217357575","displayName":"davide-mele","name":"projects/davide-mele","resources":{"hostingSite":"davide-mele"},"state":"ACTIVE","etag":"1_4a3621fa-c65d-4fb0-83df-48f50ef7bb2d"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
