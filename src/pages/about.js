@@ -1,160 +1,108 @@
 /** @format */
 
-import { Button } from "@/components";
-import Image from "next/image";
+import { Button, SubtitlePage } from "@/components";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 const About = () => {
   return (
-    <section>
-      <div className=" container px-5 py-24 mx-auto flex flex-wrap">
-        <div className=" container px-6 pb-10 mx-auto ">
-          <h2 className=" capitalize  ">
-            Alla continua ricerca con{" "}
-            <span className="underline decoration-[#fcca46]">passione</span>{" "}
-            <br />
-            per l’innovazione tecnica.{" "}
-          </h2>
+    <div className="container mx-auto p-6 flex flex-col">
+      <SubtitlePage
+        mainText="In costante"
+        highlightedText="ricerca"
+        subText="di crescita."
+        paragraphText="La passione per il settore mi porta a formarmi continuamente."
+      />
 
-          <p className="mt-4 ">Qualcosa su di me.</p>
-          <div className="my-10">
-            <Link className="hover:no-underline" href={"/assets/Davide-Mele-25.pdf"} download={"Davide-Mele-25.pdf"}>
-              <Button onClick={() => console.log("Cv scaricato correttamente")} iconType={"download"} title={"scarica il mio cv"} />
-            </Link>
-          </div>
-        </div>
-
-        
-        <div className=" lg:w-1/4 w-full mb-10 lg:mb-0 overflow-hidden">
-          <Image
-            alt="feature"
-            className="object-cover object-center h-full w-full"
-            src="/assets/davide-mele.webp"
-            width={460}
-            height={500}
+      <div className="my-10">
+        <Link
+          className="hover:no-underline"
+          href={"/assets/Davide-Mele-25.pdf"}
+          download={"Davide-Mele-25.pdf"}
+        >
+          <Button
+            onClick={() => console.log("Cv scaricato correttamente")}
+            iconType={"download"}
+            title={"scarica il mio cv"}
           />
+        </Link>
+      </div>
+
+      <div
+        id="about-container"
+        className="design-card w-full h-auto md:h-auto md:grid grid-cols-5 gap-5"
+      >
+        <div className="col-span-2">
+          <h2>Esperienza Professionale in Progetti Complessi</h2>
+          <p className="my-3">
+            Con oltre <span className="text-highlight">5 anni</span> di esperienza presso
+            <Link
+              href={"http://www.ipeprogetti.it/"}
+              className="px-1.5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ipe Progetti <FontAwesomeIcon icon={faArrowRightFromBracket} />
+            </Link>{" "}
+            a Torino, ho affinato competenze nella{" "}
+            <span className="sottolineatura">progettazione impiantistica</span> e{" "}
+            <span className="sottolineatura">gestione di commesse complesse</span>.
+            <div className="mt-2">
+              Tra i miei traguardi, spiccano la supervisione di progetti multimilionari e
+              l&apos;implementazione di <span className="text-highlight">soluzioni innovative</span>{" "}
+              che hanno ottimizzato l&apos;efficienza operativa in modo significativo.
+            </div>
+          </p>
         </div>
-        <div className="design-card flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-          <div className="flex flex-col mb-10 lg:items-start items-center">
-            <div className="w-12 h-12 inline-flex items-center justify-center  mb-5">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-6 h-6"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-              </svg>
-            </div>
-            <div className="flex-grow">
-              <h2 className="  mb-3">Shooting Stars</h2>
-              <p className="leading-relaxed ">
-                Con oltre 5 anni di esperienza presso Ipe Progetti a Torino, ho
-                maturato competenze avanzate in progettazione impiantistica e
-                gestione di commesse, lavorando su progetti complessi che
-                combinano precisione tecnica ed elevati standard di qualità.
-              </p>
-              <Link href="/" className="mt-3 inline-flex items-center">
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col mb-10 lg:items-start items-center">
-            <div className="w-12 h-12 inline-flex items-center justify-center  mb-5">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-6 h-6"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="6" cy="6" r="3" />
-                <circle cx="6" cy="18" r="3" />
-                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
-              </svg>
-            </div>
-            <div className="flex-grow">
-              <h2 className=" mb-3">The Catalyzer</h2>
-              <p className="">
-                La mia formazione come geometra e la specializzazione in
-                software avanzati come AutoCAD, Suite Blumatica, e Microsoft
-                Project mi permettono di affrontare ogni sfida progettuale con
-                metodo e visione.
-              </p>
-              <Link href="/" className="mt-3 inline-flex items-center">
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col mb-10 lg:items-start items-center">
-            <div className="w-12 h-12 inline-flex items-center justify-center rounded-full mb-5">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-6 h-6"
-                viewBox="0 0 24 24"
-              >
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-            </div>
-            <div className="flex-grow">
-              <h2 className="mb-3">Neptune</h2>
-              <p className="">
-                Il mio obiettivo è crescere come Project Manager, continuando a
-                sviluppare soluzioni innovative e sostenibili per il settore
-                edilizio, sempre con un occhio attento all’efficienza energetica
-                e al rispetto delle tempistiche e del budget.
-              </p>
-              <Link href="/" className="mt-3 inline-flex items-center">
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </div>
+
+        <Image
+          src="/assets/davide-mele.webp"
+          alt="davide-mele"
+          className=" design-img col-span-2"
+          width={500}
+          height={200}
+        />
+        <div className="row-span-2 my-4 md:my-0">
+          <h2>Competenza Tecnica</h2>
+          <p className="my-3">
+            Grazie alla mia <span className="text-highlight">formazione tecnica</span> e alla
+            padronanza di software come <span className="text-highlight">AutoCAD</span>, Suite
+            Blumatica e Microsoft Project, ho sviluppato un approccio sistematico alla
+            risoluzione di problemi complessi. <br /> Questo mi consente di trasformare concetti in{" "}
+            <span className="">risultati tangibili</span>, sempre con un occhio alle{" "}
+            <span className="text-highlight">ultime tecnologie</span> del settore.
+          </p>
+        </div>
+
+        <Image
+          src="/assets/mole.webp"
+          alt="davide-mele"
+          className="design-img object-cover"
+          width={500}
+          height={200}
+        />
+        <div>
+          <blockquote className=" ">
+            &quot; La voglia di migliorare sempre è ciò che mi spinge a non fermarmi mai.&quot;
+          </blockquote>
+        </div>
+        <div className="col-span-2 md:px-5 my-6 md:my-4">
+          <h2>Visione per il Futuro: Innovazione e Sostenibilità</h2>
+          <p className="my-3">
+            Nel mio percorso, la <span className="text-highlight">sostenibilità</span> non è solo
+            un obiettivo, ma <span className="sottolineatura">IL principio guida</span>.
+            <span className="mt-2 block">
+              Attraverso soluzioni <span className="text-shadow">innovative</span> e
+              l&apos;adozione di tecnologie <span className="">eco-compatibili</span>, miro a
+              rivoluzionare il settore edilizio, creando valore per i clienti e{" "}
+              <span className="text-highlight"> rispettando l&apos;ambiente</span>.
+            </span>
+          </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

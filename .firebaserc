@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "davide-mele"
-  }
+    "default": "davide-mele-studio-tecnico",
+    "davide": "davide-mele-studio-tecnico"
+  },
+  "targets": {},
+  "etags": {}
 }

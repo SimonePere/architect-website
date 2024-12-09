@@ -19,7 +19,7 @@ const PortfolioCard = ({
     <div
       className={`relative  design-card 
         ${additionalClasses} min-w-[85vw] max-w-[100vw] min-h-[100%]  
-        md:min-w-[400px] md:max-w-[500px] lg:max-w-[600px] snap-center `}
+        md:min-w-[350px] md:max-w-[500px] lg:max-w-[600px] snap-center `}
        
     >
       {/* Badge opzionale */}
@@ -38,19 +38,19 @@ const PortfolioCard = ({
         <Image
           src={imageSrc}
           alt={title}
-          className=" object-cover mb-4"
+          className=" object-cover mb-4 h-[25vh]"
           width={500}
           height={200}
         />
       )}
 
       {/* Titolo */}
-      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase mb-3 border-b-2 border-[#fcca46] inline-block w-2/3 ">
+      <h2 className="uppercase mb-3  border-b-2 border-[#fcca46] inline-block w-2/3 md:h-24  md:py-4  ">
         {title}
       </h2>
 
       {/* Sottotitolo */}
-      <p className="text-sm md:text-base leading-relaxed mb-5 text-[#f2f4f7] h-[85px] lg:h-[100px] overflow-hidden">
+      <p className=" mb-5 text-[#adadad]  overflow-hidden w-full h-20 ">
         {subtitle}
       </p>
 

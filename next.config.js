@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',  // Abilita l'esportazione statica
+  output: 'export',
+  images: {unoptimized:true}// Abilita l'esportazione statica
 };
 
 module.exports = nextConfig;

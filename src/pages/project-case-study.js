@@ -5,8 +5,8 @@ import projectData from "@/data/data";
 
 const ProjectCaseStudy = () => {
   return (
-    <div className=" py-10 mx-auto flex flex-col">
-      <div className="container px-6 pb-10 mx-auto ">
+    <>
+      <div className="container px-6 pb-10 mx-auto justify-center  ">
         <h2 className=" capitalize  ">
           I miei{" "}
           <span className="underline decoration-[#fcca46]">Progetti</span>{" "}
@@ -14,16 +14,11 @@ const ProjectCaseStudy = () => {
           principali.
         </h2>
 
-        <p className="mt-4 ">
-          Ultimi lavori racchiusi per importanza.
-        </p>
-
-        
+        <p className="mt-4 text-[#adadad] ">Ultimi lavori racchiusi per importanza.</p>
       </div>
+      <Project projects={projectData} />
+    </>
 
-<Project projects={projectData}/>
-      
-    </div>
   );
 };
 

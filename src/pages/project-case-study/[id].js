@@ -30,7 +30,7 @@ export async function getStaticProps({ params }) {
 // 3. Il componente che renderizza la pagina
 const ProjectCaseStudy = ({ project }) => {
   return (
-    <div className="py-10 mx-auto flex flex-col">
+    <div className=" mx-auto flex flex-col">
       <div className="container px-6 pb-10 mx-auto ">
         <h2 className="capitalize">
           {project.title}

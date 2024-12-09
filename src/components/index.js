@@ -8,5 +8,7 @@ export { default as Project } from "./Project";
 export { default as Footer } from "./Footer";
 export { default as BannerFooter } from "./BannerFooter";
 export { default as Breadcrumb } from "./Breadcrumb";
+export { default as SubtitlePage } from "./SubtitlePage";
+export { default as Sidebar } from "./Sidebar";
 export { default as Button } from "./Button";
 

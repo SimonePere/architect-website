@@ -21,14 +21,14 @@ import { Button } from "@/components";
 const Contact = () => {
   return (
       <div className="container mx-auto p-6">
-        <div className=" mt-16 lg:flex lg:items-start lg:space-x-12">
+        <div className="  lg:flex lg:items-start lg:space-x-12">
           {/* Informazioni di contatto */}
           <div className="design-card lg:w-1/2">
-            <div className="mt-6">
+            <div className="">
               <h2>
                 Entriamo in contatto <br />{" "}
               </h2>
-              <p>
+              <p className="my-3 ">
                 Sono sempre disponibile per discutere nuove opportunità,
                 collaborazioni o progetti. Inviami un messaggio e farò del mio
                 meglio per risponderti al più presto.
@@ -43,7 +43,7 @@ const Contact = () => {
                     href="mailto:davide.mele95@hotmail.com"
                     className="hover:no-underline"
                   >
-                    Torino
+                   <span className="text-[#adadad]"> Torino</span>
                   </Link>
                 </li>
                 <li className="flex items-center mb-4">
@@ -52,13 +52,13 @@ const Contact = () => {
                     href="mailto:davide.mele95@hotmail.com"
                     className="hover:no-underline"
                   >
-                    davide.mele95@hotmail.com
+                    <span className="text-[#adadad]"> davide.mele95@hotmail.com </span>
                   </Link>
                 </li>
                 <li className="flex items-center mb-4">
                   <FontAwesomeIcon icon={faPhoneAlt} className="mr-3 text-lg" />
                   <Link href="tel:+39393984217" className="hover:no-underline">
-                    +39 3932984217
+                  <span className="text-[#adadad]"> +39 3932984217</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
@@ -70,7 +70,9 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/davide-mele-091619255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     className="hover:no-underline"
                   >
-                    Davide Mele
+                  <span className="text-[#adadad]">
+                  Davide Mele
+                  </span>
                   </Link>
                 </li>
               </ul>

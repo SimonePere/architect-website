@@ -37,7 +37,7 @@ const Project = ({ projects }) => {
                 <div className="flex flex-col justify-center">
                   <h2 className="mt-4">{section.title}</h2>
                   <div className="w-12 h-1 mt-2 mb-4"></div>
-                  <p>{section.content}</p>
+                  <p >{section.content}</p>
                 </div>
               </div>
             ))}
