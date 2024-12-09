@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[712],{7226:(e,s,_)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/services",function(){return _(8531)}])},8531:(e,s,_)=>{"use strict";_.r(s),_.d(s,{default:()=>i});var r=_(4848);_(6540);let i=()=>(0,r.jsx)("div",{children:"services"})}},e=>{var s=s=>e(e.s=s);e.O(0,[636,593,792],()=>s(7226)),_N_E=e.O()}]);
