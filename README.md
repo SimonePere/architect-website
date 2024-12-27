@@ -1,40 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Architect Website
 
-## Getting Started
+![Architect Website](https://img.shields.io/badge/Architect%20Website-Next.js-blue)
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The *Architect Website* is a personal portfolio and professional about page designed as a gift for your brother, Davide. This project showcases a modern, responsive design built with Next.js and Tailwind CSS, providing an elegant platform to display architectural projects and relevant professional information.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- *Responsive Design:* Ensures optimal viewing experience across devices of all sizes.
+- *Portfolio Showcase:* Displays architectural projects with high-quality images and detailed descriptions.
+- *About Section:* Highlights Davide’s professional background and expertise.
+- *Contact Information:* Includes a contact section for potential clients or collaborators.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Live Demo
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Visit the live website at: [davide-mele-studio-tecnico.vercel.app](https://davide-mele-studio-tecnico.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 14.0 or higher
+- npm or yarn package manager
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### Steps
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. *Clone the Repository:*
 
-## Deploy on Vercel
+   bash
+   git clone https://github.com/SimonePere/architect-website.git
+   
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. *Navigate to the Project Directory:*
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+   bash
+   cd architect-website
+   
+
+3. *Install Dependencies:*
+
+   Using npm:
+
+   bash
+   npm install
+   
+
+   Or using yarn:
+
+   bash
+   yarn install
+   
+
+## Usage
+
+1. *Run the Development Server:*
+
+   Using npm:
+
+   bash
+   npm run dev
+   
+
+   Or using yarn:
+
+   bash
+   yarn dev
+   
+
+2. *Access the Website:*
+
+   Open your browser and navigate to http://localhost:3000 to view the website.
+
+3. *Build for Production:*
+
+   To create an optimized production build:
+
+   Using npm:
+
+   bash
+   npm run build
+   
+
+   Or using yarn:
+
+   bash
+   yarn build
+   
+
+4. *Start the Production Server:*
+
+   After building the project:
+
+   Using npm:
+
+   bash
+   npm run start
+   
+
+   Or using yarn:
+
+   bash
+   yarn start
+   
+
+## Deployment
+
+This project is configured for deployment on Vercel. For detailed instructions on deploying Next.js applications, refer to the [Next.js Deployment Documentation](https://nextjs.org/docs/deployment).
+
+## Contributing
+
+Contributions are welcome! Follow these steps to contribute:
+
+1. *Fork the Repository.*
+2. *Create a New Branch:*
+
+   bash
+   git checkout -b feature/YourFeatureName
+   
+
+3. *Make Your Changes.*
+4. *Commit Your Changes:*
+
+   bash
+   git commit -m 'Add feature: YourFeatureName'
+   
+
+5. *Push to the Branch:*
+
+   bash
+   git push origin feature/YourFeatureName
+   
+
+6. *Open a Pull Request.*
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or suggestions, please contact [Simone Mele Web Design](https://simone-mele-portfolio.web.app/).
